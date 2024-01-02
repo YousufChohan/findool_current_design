@@ -1,0 +1,28 @@
+.header-wrapper{
+    display: flex;
+    gap: 2rem;
+    padding: 10px 40px;
+    align-items: center;
+    background-color: #d0e4ff;
+    justify-content: space-between;
+}
+
+.signup-button{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    border:1px solid #f54029;
+    border-radius: 26px;
+    padding: 10px 25px;
+    margin-right: 10px;
+}
+
+.login-button{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    background-color: #f54029;
+    border:1px solid #f54029;
+    border-radius: 26px;
+    padding: 10px 25px;
+}
