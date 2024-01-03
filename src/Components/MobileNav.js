@@ -29,9 +29,10 @@ export const MobileNav = () => {
         type="button"
         onClick={() => setShowMenu((prev) => !prev)}
       >
-        <img src={hamburger} style={{ width: 35 }} />
+        <img src={hamburger} alt="An icon for menu" style={{ width: 35 }} />
       </button>
 
+      {/* If state true then render mobile menu items */}
       {showMenu && (
         <ul className="menus" ref={ref}>
           {menuItemsData.map((menu, index) => {

@@ -7,11 +7,11 @@ import Footer from "../Components/Footer";
 export default function Root() {
   return (
     <>
+      <Header />
       <div style={{ display: "flex" }}>
         <Navbar />
 
         <div className="main-content">
-          <Header />
           <div className="content">
             <Outlet />
           </div>

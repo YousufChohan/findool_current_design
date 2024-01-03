@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./App.css";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/autoplay";
-
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import ProductCard from "./Components/ProductCard";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 function App() {
   return (
     <>
@@ -14,94 +17,35 @@ function App() {
       <Swiper
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
+          disableOnInteraction: true,
         }}
         spaceBetween={50}
         slidesPerView={3}
-        scrollbar={{ draggable: true }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
         </SwiperSlide>
       </Swiper>
 
@@ -112,93 +56,35 @@ function App() {
       <Swiper
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
+          disableOnInteraction: true,
         }}
         spaceBetween={50}
         slidesPerView={3}
-        scrollbar={{ draggable: true }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="card-content">
-                <h2 className="card-title">Awesome Product</h2>
-                <p className="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio, culpa.
-                </p>
-                <Link to="/" className="card-button">
-                  Add to Cart
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
         </SwiperSlide>
       </Swiper>
     </>

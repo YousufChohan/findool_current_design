@@ -8,6 +8,35 @@ export const Navbar = () => {
   return (
     <>
       <nav className="desktop-nav">
+        <div className="nav-logos">
+          <i
+            class="fa-solid fa-house --fa-primary-color"
+            style={{ color: "#000" }}
+          ></i>
+          <i class="fa-solid fa-shop" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-business-time" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-newspaper" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-magnifying-glass" style={{ color: "#000" }}></i>
+          <i
+            class="fa-solid fa-hand-holding-dollar"
+            style={{ color: "#000" }}
+          ></i>
+          <i class="fa-solid fa-calendar-days" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-gear" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-comments" style={{ color: "#000" }}></i>
+          <i class="fa-regular fa-image" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-heart" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-thumbs-up" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-eye" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-bell" style={{ color: "#000" }}></i>
+          <i
+            class="fa-solid fa-share-from-square"
+            style={{ color: "#000" }}
+          ></i>
+          <i class="fa-solid fa-square-check" style={{ color: "#000" }}></i>
+          <i class="fa-solid fa-briefcase" style={{ color: "#000" }}></i>
+        </div>
+        {/* <div className="right-triangle"></div> */}
         <ul className="menus">
           <div
             style={{
@@ -22,6 +51,7 @@ export const Navbar = () => {
               <img src={logo} alt="Findool Logo" style={{ margin: "auto" }} />
             </Link>
           </div>
+
           {menuItemsData.map((menu, index) => {
             return <MenuItems items={menu} key={index} />;
           })}

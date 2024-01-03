@@ -3,7 +3,7 @@
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-accent-400: hsl(7, 91%, 56%);
   --clr-accent-401: hsl(195, 100%, 44%);
-
+  --fa-primary-color: #0089cf;
 }
 
 * {
@@ -17,8 +17,10 @@ body {
 }
 
 .main-content{
-  width: 85%;
+  width: 100%;
 }
+
+
 
 header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -67,14 +69,68 @@ header {
 }
 
 /* menu on desktop */
-.desktop-nav{
+/* .desktop-nav{
   position:sticky;
   height:100vh;
   width: 15%;
-  top:0;
-  float:left;
+  top: 0;
+  float:right;
   z-index: 100;
-  background-color: #d0e4ff;
+  background-color: blue;
+} */
+
+.desktop-nav{
+  position:fixed;
+  height:100vh;
+  width: 30px;
+  top: 0;
+  left: 0;
+  float:right;
+  z-index: 100;
+  box-shadow: 5px 0 3px -2px #888;
+  /* background-color: #d0e4ff; */
+  background: linear-gradient(45deg, #f54029, #d0e4ff 70%);
+  transition: width 300ms ease-in-out;
+}
+
+.desktop-nav .menus{
+  display: none;
+  width: 0;
+  transition: display 1s ease-in-out;
+}
+
+.desktop-nav:hover{
+  width: 200px;
+}
+
+.desktop-nav:hover .menus{
+  display: block;
+  width: 100%;
+}
+
+.desktop-nav:hover .nav-logos, .desktop-nav:hover .right-triangle{
+  display: none;
+}
+
+.nav-logos{
+  position: absolute;
+  top: 10%;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.right-triangle{
+  position: absolute;
+  right:10px;
+  top: 50%;
+  width: 10px;
+	height: 10px;
+	border-top: 5px solid transparent;
+	border-left: 10px solid #0089cf;
+	border-bottom: 5px solid transparent;
 }
 
 .desktop-nav .menus {
@@ -144,7 +200,7 @@ header {
   padding: 0.5rem 0;
   list-style: none;
   transition: display 500ms ease;
-  background-color: #d9edf7;
+  background-color: rgba(217, 237, 247, 0.459);
   border-radius: 0.5rem;
   display: none;
 }
@@ -175,7 +231,6 @@ header {
 }
 
 .mobile-show{
-  display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -186,7 +241,6 @@ header {
   }
 
   .desktop-nav {
-    display: none;
     text-align: right;
   }
 
@@ -279,6 +333,15 @@ header {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .mobile-show{
+    display: flex;
+  }
+  .desktop-nav{
+    display: none;
+  }
+}
+
 /* page content */
 .content {
   max-width: 1200px;
@@ -304,7 +367,8 @@ header {
 
 .card-wrapper{
   display: grid;
-  /* place-items: center; */
+  width: 100%;
+  place-items: center;
   line-height: 1.6;
   font-family: sans-serif;
 }

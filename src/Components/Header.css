@@ -1,7 +1,7 @@
 .header-wrapper{
     display: flex;
     gap: 2rem;
-    padding: 10px 40px;
+    padding: 10px 20px;
     align-items: center;
     background-color: #d0e4ff;
     justify-content: space-between;

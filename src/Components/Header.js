@@ -3,7 +3,6 @@ import logo from "../Assets/Images/logo2.png";
 import search from "../Assets/Images/magnifier.png";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import { Navbar } from "./Navbar";
 import { MobileNav } from "./MobileNav";
 function Header() {
   return (
@@ -11,10 +10,10 @@ function Header() {
       <div className="header-wrapper">
         <div className="mobile-show">
           <MobileNav />
-          <Link to="/">
-            <img src={logo} alt="Findool Logo" style={{ margin: "auto" }} />
-          </Link>
         </div>
+        <Link to="/">
+          <img src={logo} alt="Findool Logo" style={{ marginLeft: 20 }} />
+        </Link>
         <div style={{ display: "flex", width: "60%" }}>
           <input
             placeholder="Search for anything"
@@ -39,7 +38,11 @@ function Header() {
               borderBottomRightRadius: 16,
             }}
           >
-            <img src={search} style={{ width: 30 }} />
+            <img
+              src={search}
+              alt="An Arrow for Sidebar"
+              style={{ width: 30 }}
+            />
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
