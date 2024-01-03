@@ -16,7 +16,7 @@ function Footer() {
         className="text-center"
         color="black"
         bgColor="none"
-        style={{ backgroundColor: "#d0e4ff" }}
+        style={{ backgroundColor: "#d0e4ff", marginTop: 40 }}
       >
         <MDBContainer className="p-4">
           <section className="">

@@ -94,6 +94,45 @@ function App() {
       </p>
 
       <Newsfeed />
+
+      <p className="heading" style={{ marginTop: 50 }}>
+        Trending <strong> Business</strong>
+      </p>
+
+      <Swiper
+        loop={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: true,
+        }}
+        spaceBetween={50}
+        slidesPerView={3}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+      </Swiper>
     </>
   );
 }
