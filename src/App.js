@@ -31,6 +31,7 @@ function App() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Optio, culpa.
                 </p>
+
                 <Link to="/" className="card-button">
                   Add to Cart
                 </Link>

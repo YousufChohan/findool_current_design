@@ -143,6 +143,7 @@ header {
   width: inherit;
   padding: 0.5rem 0;
   list-style: none;
+  transition: display 500ms ease;
   background-color: #d9edf7;
   border-radius: 0.5rem;
   display: none;
