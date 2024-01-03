@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import ProductCard from "./Components/ProductCard";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Newsfeed from "./Components/Newsfeed";
 function App() {
   return (
     <>
@@ -87,6 +88,12 @@ function App() {
           <ProductCard />
         </SwiperSlide>
       </Swiper>
+
+      <p className="heading" style={{ marginTop: 50 }}>
+        Trending <strong> Newsfeeds Topics</strong>
+      </p>
+
+      <Newsfeed />
     </>
   );
 }
