@@ -12,7 +12,7 @@ function Header() {
           <MobileNav />
         </div>
         <Link to="/">
-          <img src={logo} alt="Findool Logo" style={{ marginLeft: 20 }} />
+          <img src={logo} alt="Findool Logo" style={{ marginLeft: 40 }} />
         </Link>
         <div style={{ display: "flex", width: "60%" }}>
           <input

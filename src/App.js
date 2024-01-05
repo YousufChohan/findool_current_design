@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import ProductCard from "./Components/ProductCard";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Newsfeed from "./Components/Newsfeed";
+import JobCard from "./Components/JobCard";
 function App() {
   return (
     <>
@@ -74,22 +75,19 @@ function App() {
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <ProductCard />
+          <JobCard />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
+          <JobCard />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
+          <JobCard />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
+          <JobCard />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
+          <JobCard />
         </SwiperSlide>
       </Swiper>
 

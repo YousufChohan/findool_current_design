@@ -21,20 +21,20 @@ const MenuItems = ({ items }) => {
     };
   }, [dropdown]);
 
-  const onMouseEnter = () => {
-    setDropdown(true);
-  };
+  // const onMouseEnter = () => {
+  //   setDropdown(true);
+  // };
 
-  const onMouseLeave = () => {
-    setDropdown(false);
-  };
+  // const onMouseLeave = () => {
+  //   setDropdown(false);
+  // };
 
   return (
     <li
       className="menu-items"
       ref={ref}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+      // onMouseEnter={onMouseEnter}
+      // onMouseLeave={onMouseLeave}
     >
       {items.submenu ? (
         <>

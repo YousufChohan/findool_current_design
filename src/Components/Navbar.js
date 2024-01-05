@@ -7,12 +7,14 @@ import logo from "../Assets/Images/logo2.png";
 export const Navbar = () => {
   return (
     <>
+      <Link className="home-logo" to="/">
+        <i
+          class="fa-solid fa-house --fa-primary-color"
+          style={{ color: "#000" }}
+        ></i>
+      </Link>
       <nav className="desktop-nav">
         <div className="nav-logos">
-          <i
-            class="fa-solid fa-house --fa-primary-color"
-            style={{ color: "#000" }}
-          ></i>
           <i class="fa-solid fa-shop" style={{ color: "#000" }}></i>
           <i class="fa-solid fa-business-time" style={{ color: "#000" }}></i>
           <i class="fa-solid fa-newspaper" style={{ color: "#000" }}></i>
