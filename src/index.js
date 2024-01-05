@@ -6,7 +6,6 @@ import Root from "./Routes/Root";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./Routes/Error";
 import { Fundraising } from "./Routes/Fundraising";
-import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Signup from "./Routes/Auth/Signup";
 import Login from "./Routes/Auth/Login";
