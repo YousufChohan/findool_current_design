@@ -545,16 +545,18 @@ header {
 }
 
 .card-title {
+  font-weight: 500;
+  font-size: 25px;
   margin-bottom: 10px;
   position: relative;
   width: max-content;
 }
 
+
+
 .card-title2 {
   font-weight: 400;
   font-size: 20px;
-  position: relative;
-  width: max-content;
 }
 
 .card:hover .card-title::after,
