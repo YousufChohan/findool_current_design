@@ -8,6 +8,8 @@ import Error from "./Routes/Error";
 import { Fundraising } from "./Routes/Fundraising";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Signup from "./Routes/Auth/Signup";
+import Login from "./Routes/Auth/Login";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,16 @@ const router = createBrowserRouter([
         element: <Fundraising />,
       },
     ],
+  },
+  {
+    element: <Signup />,
+    path: "/signup",
+    errorElement: <Error />,
+  },
+  {
+    element: <Login />,
+    path: "/login",
+    errorElement: <Error />,
   },
 ]);
 

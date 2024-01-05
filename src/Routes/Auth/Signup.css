@@ -1,0 +1,18 @@
+.signup-wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.signup-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+    border: solid 4px #0089cf;
+    border-radius: 16px;
+}

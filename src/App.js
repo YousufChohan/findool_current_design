@@ -11,8 +11,9 @@ import Newsfeed from "./Components/Newsfeed";
 function App() {
   return (
     <>
-      <p className="heading">
-        Latest <strong>Products</strong>
+      <p style={{ textAlign: "center" }}>
+        <span className="heading-gradient">Latest</span>
+        <span className="heading"> Products</span>
       </p>
 
       <Swiper
@@ -20,6 +21,7 @@ function App() {
         autoplay={{
           delay: 2000,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         }}
         spaceBetween={50}
         slidesPerView={3}
@@ -50,8 +52,9 @@ function App() {
         </SwiperSlide>
       </Swiper>
 
-      <p className="heading" style={{ marginTop: 50 }}>
-        Available <strong>High Paying Jobs</strong>
+      <p style={{ textAlign: "center" }}>
+        <span className="heading-gradient">Available</span>
+        <span className="heading"> High Paying Jobs</span>
       </p>
 
       <Swiper
@@ -59,6 +62,7 @@ function App() {
         autoplay={{
           delay: 2000,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         }}
         spaceBetween={50}
         slidesPerView={3}
@@ -89,14 +93,16 @@ function App() {
         </SwiperSlide>
       </Swiper>
 
-      <p className="heading" style={{ marginTop: 50 }}>
-        Trending <strong> Newsfeeds Topics</strong>
+      <p style={{ textAlign: "center" }}>
+        <span className="heading-gradient">Trending</span>
+        <span className="heading"> Newsfeed Topics</span>
       </p>
 
       <Newsfeed />
 
-      <p className="heading" style={{ marginTop: 50 }}>
-        Trending <strong> Business</strong>
+      <p style={{ textAlign: "center" }}>
+        <span className="heading-gradient">Trending</span>
+        <span className="heading"> Business</span>
       </p>
 
       <Swiper
@@ -104,6 +110,7 @@ function App() {
         autoplay={{
           delay: 2000,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         }}
         spaceBetween={50}
         slidesPerView={3}
