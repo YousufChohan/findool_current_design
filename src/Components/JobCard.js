@@ -3,9 +3,9 @@ import "../App.css";
 const JobCard = () => (
   <div className="job-card-wrapper">
     <div style={{ display: "flex", justifyContent: "flex-end", gap: 10 }}>
+      <i class="fa-solid fa-eye" style={{ color: "#000" }}></i>
       <i class="fa-solid fa-heart" style={{ color: "#000" }}></i>
-      <i class="fa-solid fa-heart" style={{ color: "#000" }}></i>
-      <i class="fa-solid fa-heart" style={{ color: "#000" }}></i>
+      <i class="fa-solid fa-share" style={{ color: "#000" }}></i>
     </div>
     <div
       style={{

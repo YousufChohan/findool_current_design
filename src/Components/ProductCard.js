@@ -7,6 +7,7 @@ const ProductCard = () => (
     <div className="card">
       <div className="card-content">
         <h2 className="card-title">Awesome Product</h2>
+        <h2 className="card-title2">$45 - $48</h2>
         <p className="card-body">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio,
           culpa.
