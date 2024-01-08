@@ -4,15 +4,55 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
 }
 
 .signup-box{
     display: flex;
+    width: 50vw;
+    height: 80vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: wheat;
-    border: solid 4px #0089cf;
-    border-radius: 16px;
+    border: solid 2px #0089cf;
+    border-radius: 20px;
+    box-shadow: rgb(88, 133, 180) 0px 20px 30px -10px;    background-color: lightblue;
 }
+
+.icon-outline{
+    height: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    border: 2px dashed #000;
+    border-radius: 100px;
+
+}
+
+.s-heading{
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.s-button{
+    width: 10rem;
+    padding: 10px 30px;
+    border-radius: 36px;
+    background-color: #0089cf;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    align-self: center;
+}
+
+.s-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    margin-top: 50px;
+}
+

@@ -455,6 +455,10 @@ header {
   margin-left: 1.5rem;
 }
 
+.job-card-content{
+  margin-top: 20px;
+}
+
 .job-card-content p{
   font-size: 16px !important;
   font-weight: 600;
